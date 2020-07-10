@@ -244,12 +244,12 @@ public class ScoreServiceImplV1 implements ScoreService {
 		System.out.println();
 		System.out.print("과목평균\t");
 		float avgAndAvg=0f;
-		for(int sum : totalAvg) {
+		for(int sum : totalSum) {
 			float avg=(float)sum/totalSum.length;
 			System.out.printf("%5.2f\t", avg);
 			avgAndAvg+=avg;
 		}
-		System.out.printf("\t%5.2s\n", (float)avgAndAvg/totalSum.length);
+		System.out.printf("\t%5.2f\n", avgAndAvg/totalSum.length);
 		System.out.println(Lines.dLine);
 	}
 
